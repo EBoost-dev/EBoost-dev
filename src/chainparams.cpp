@@ -106,7 +106,7 @@ public:
         pchMessageStart[1] = 0xd9;
         pchMessageStart[2] = 0xb7;
         pchMessageStart[3] = 0xdd;
-        nDefaultPort = 5883;
+        nDefaultPort = 5884;
         nPruneAfterHeight = 0;
 	consensus.coinFixOneBlock = 15000;
         consensus.coinFixTwoBlock = 62000;
@@ -190,7 +190,7 @@ public:
         pchMessageStart[1] = 0xd9;
         pchMessageStart[2] = 0xb7;
         pchMessageStart[3] = 0xdd;
-        nDefaultPort = 15883;
+        nDefaultPort = 15884;
         nPruneAfterHeight = 1;
 
         genesis = CreateGenesisBlock(1442662822, 62851, 0x1e0ffff0, 1, 0, "Worlds Tastiest Pizza Still Undiscovered");
@@ -270,7 +270,7 @@ public:
         pchMessageStart[1] = 0xd9;
         pchMessageStart[2] = 0xb7;
         pchMessageStart[3] = 0xdd;
-        nDefaultPort = 16994;
+        nDefaultPort = 25884;
         nPruneAfterHeight = 1000;
 
         genesis = CreateGenesisBlock(1442662822, 62851, 0x207fffff, 1, 0, "Worlds Tastiest Pizza Still Undiscovered");
