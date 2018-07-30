@@ -20,6 +20,7 @@
 class CBlockIndex;
 class CCoinsViewDBCursor;
 class uint256;
+struct CExtDiskTxPos;
 
 //! Compensate for extra memory peak (x1.5-x1.9) at flush time.
 static constexpr int DB_PEAK_USAGE_FACTOR = 2;
@@ -64,6 +65,12 @@ struct CDiskTxPos : public CDiskBlockPos
     void SetNull() {
         CDiskBlockPos::SetNull();
         nTxOffset = 0;
+    }
+
+    friend bool operator<(const CDiskTxPos &a, const CDiskTxPos &b) {
+        return (a.nFile < b.nFile || (
+               (a.nFile == b.nFile) && (a.nPos < b.nPos || (
+               (a.nPos == b.nPos) && (a.nTxOffset < b.nTxOffset)))));
     }
 };
 
@@ -110,6 +117,7 @@ class CBlockTreeDB : public CDBWrapper
 public:
     CBlockTreeDB(size_t nCacheSize, bool fMemory = false, bool fWipe = false);
 private:
+    uint256 salt;
     CBlockTreeDB(const CBlockTreeDB&);
     void operator=(const CBlockTreeDB&);
 public:
@@ -122,7 +130,70 @@ public:
     bool WriteTxIndex(const std::vector<std::pair<uint256, CDiskTxPos> > &list);
     bool WriteFlag(const std::string &name, bool fValue);
     bool ReadFlag(const std::string &name, bool &fValue);
+
+    bool ReadAddrIndex(uint160 addrid, std::vector<CExtDiskTxPos> &list);
+    bool AddAddrIndex(const std::vector<std::pair<uint160, CExtDiskTxPos> > &list);
+
+    bool ReadACP(uint256& hashCheckpoint);
+    bool WriteACP(uint256 hashCheckpoint);
+    bool ReadACPPubKey(std::string& strPubKey);
+    bool WriteACPPubKey(const std::string& strPubKey);
+
     bool LoadBlockIndexGuts(boost::function<CBlockIndex*(const uint256&)> insertBlockIndex);
+};
+
+struct CExtDiskTxPos : public CDiskTxPos
+{
+    unsigned int nHeight;
+
+    ADD_SERIALIZE_METHODS;
+
+    template <typename Stream, typename Operation>
+    inline void SerializationOp(Stream& s, Operation ser_action) {
+            READWRITE(*(CDiskTxPos*)this);
+            READWRITE(VARINT(nHeight));
+    }
+
+    CExtDiskTxPos(const CDiskTxPos &pos, int nHeightIn) : CDiskTxPos(pos), nHeight(nHeightIn) {
+    }
+
+    CExtDiskTxPos() {
+        SetNull();
+    }
+
+    void SetNull() {
+        CDiskTxPos::SetNull();
+        nHeight = 0;
+    }
+
+    friend bool operator==(const CExtDiskTxPos &a, const CExtDiskTxPos &b) {
+        return (a.nHeight == b.nHeight && a.nFile == b.nFile && a.nPos == b.nPos && a.nTxOffset == b.nTxOffset);
+    }
+
+    friend bool operator!=(const CExtDiskTxPos &a, const CExtDiskTxPos &b) {
+        return !(a == b);
+    }
+
+    friend bool operator<(const CExtDiskTxPos &a, const CExtDiskTxPos &b) {
+        if (a.nHeight < b.nHeight) return true;
+        if (a.nHeight > b.nHeight) return false;
+        return ((const CDiskTxPos)a < (const CDiskTxPos)b);
+    }
+};
+
+/** Access to the block database (blocks/index/) */
+class ACPDB : public CDBWrapper
+{
+public:
+    ACPDB(size_t nCacheSize, bool fMemory = false, bool fWipe = false);
+private:
+    ACPDB(const ACPDB&);
+    void operator=(const ACPDB&);
+public:
+    bool ReadACP(uint256& hashCheckpoint);
+    bool WriteACP(uint256 hashCheckpoint);
+    bool ReadACPPubKey(std::string& strPubKey);
+    bool WriteACPPubKey(const std::string& strPubKey);
 };
 
 #endif // BITCOIN_TXDB_H

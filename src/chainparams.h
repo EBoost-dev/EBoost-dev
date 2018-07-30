@@ -13,6 +13,8 @@
 
 #include <vector>
 
+CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward, const char* pszTimestamp);
+
 struct CDNSSeedData {
     std::string name, host;
     bool supportsServiceBitsFiltering;

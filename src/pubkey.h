@@ -150,6 +150,10 @@ public:
         return Hash(vch, vch + size());
     }
 
+    std::vector<unsigned char> Raw() const {
+        return std::vector<unsigned char>(vch, vch+size());
+    }
+
     /*
      * Check syntactic correctness.
      *

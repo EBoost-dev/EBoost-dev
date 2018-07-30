@@ -11,6 +11,7 @@
 #include "streams.h"
 #include "sync.h"
 #include "version.h"
+#include "uint256.h"
 
 #include <map>
 #include <string>

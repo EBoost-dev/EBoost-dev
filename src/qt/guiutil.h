@@ -242,6 +242,8 @@ namespace GUIUtil
     typedef ClickableProgressBar ProgressBar;
 #endif
 
+    void SetBlackThemeQSS(QApplication& app);
+
 } // namespace GUIUtil
 
 #endif // BITCOIN_QT_GUIUTIL_H

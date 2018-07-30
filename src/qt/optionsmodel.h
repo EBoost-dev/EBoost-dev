@@ -9,6 +9,8 @@
 
 #include <QAbstractListModel>
 
+extern bool fUseBlackTheme;
+
 QT_BEGIN_NAMESPACE
 class QNetworkProxy;
 QT_END_NAMESPACE
@@ -46,6 +48,7 @@ public:
         DatabaseCache,          // int
         SpendZeroConfChange,    // bool
         Listen,                 // bool
+        UseBlackTheme,          // bool
         OptionIDRowCount,
     };
 

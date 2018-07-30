@@ -10,6 +10,7 @@
 #include "protocol.h"
 #include "util.h"
 #include "utilstrencodings.h"
+#include "uint256.h"
 
 #include <stdint.h>
 
