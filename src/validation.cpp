@@ -3191,8 +3191,8 @@ static bool AcceptBlockHeader(const CBlockHeader& block, CValidationState& state
         if (!ContextualCheckBlockHeader(block, state, chainparams.GetConsensus(), pindexPrev, GetAdjustedTime()))
             return error("%s: Consensus::ContextualCheckBlockHeader: %s, %s", __func__, hash.ToString(), FormatStateMessage(state));
 
-        if(!CheckSyncCheckpoint(hash, pindexPrev))
-            return error("%s: AcceptBlockHeader(): rejected by ACP", __func__);
+        //if(!CheckSyncCheckpoint(hash, pindexPrev))
+        //    return error("%s: AcceptBlockHeader(): rejected by ACP", __func__);
     }
 
     if (pindex == NULL)

@@ -26,10 +26,12 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     uint64_t PastBlocksMin = PastSecondsMin / BlocksTargetSpacing;
     uint64_t PastBlocksMax = PastSecondsMax / BlocksTargetSpacing;
 
-    int nHeight = pindexLast->nHeight + 1;
+    const int nHeight = pindexLast == NULL ? 0 : pindexLast->nHeight + 1;
     if (nHeight < 67000) {
+	LogPrintf("Using Bitcoin Difficulty Adjustment \n");
         return GetNextWorkRequired_Bitcoin(pindexLast, pblock, params);
     }
+    LogPrintf("Using Kimoto Difficulty Adjustment \n");
     return KimotoGravityWell(pindexLast, pblock, BlocksTargetSpacing, PastBlocksMin, PastBlocksMax);
 }
 
@@ -123,64 +125,63 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
 }
 
 unsigned int KimotoGravityWell(const CBlockIndex* pindexLast, const CBlockHeader *pblock, uint64_t TargetBlocksSpacingSeconds, uint64_t PastBlocksMin, uint64_t PastBlocksMax) {
-	/* current difficulty formula, megacoin - kimoto gravity well */
-	const CBlockIndex  *BlockLastSolved				= pindexLast;
-	const CBlockIndex  *BlockReading				= pindexLast;
-	const CBlockHeader *BlockCreating				= pblock;
-						BlockCreating				= BlockCreating;
-	uint64_t				PastBlocksMass				= 0;
-	int64_t				PastRateActualSeconds		= 0;
-	int64_t				PastRateTargetSeconds		= 0;
-	double				PastRateAdjustmentRatio		= double(1);
-	arith_uint256				PastDifficultyAverage;
-	arith_uint256				PastDifficultyAveragePrev;
-	double				EventHorizonDeviation;
-	double				EventHorizonDeviationFast;
-	double				EventHorizonDeviationSlow;
+    /* current difficulty formula, Anoncoin - kimoto gravity well */
+    const CBlockIndex *BlockLastSolved = pindexLast;
+    const CBlockIndex *BlockReading = pindexLast;
+    const CBlockHeader *BlockCreating = pblock;
+    BlockCreating = BlockCreating;
 
-	arith_uint256 powLimitArith = UintToArith256(Params().GetConsensus().powLimit);
+    uint64_t PastBlocksMass = 0;
+    int64_t PastRateActualSeconds = 0;
+    int64_t PastRateTargetSeconds = 0;
+    double PastRateAdjustmentRatio = double(1);
+    CBigNum PastDifficultyAverage;
+    CBigNum PastDifficultyAveragePrev;
+    double EventHorizonDeviation;
+    double EventHorizonDeviationFast;
+    double EventHorizonDeviationSlow;
 
-        if (BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || (uint64_t)BlockLastSolved->nHeight < PastBlocksMin) {
-		return powLimitArith.GetCompact();
-	}
+    if (BlockLastSolved == NULL || BlockLastSolved->nHeight == 0 || (uint64_t)BlockLastSolved->nHeight < PastBlocksMin) { return bnProofOfWorkLimit.GetCompact(); }
 
-	for (unsigned int i = 1; BlockReading && BlockReading->nHeight > 0; i++) {
-		if (PastBlocksMax > 0 && i > PastBlocksMax) { break; }
-		PastBlocksMass++;
+    for (unsigned int i = 1; BlockReading && BlockReading->nHeight > 0; i++) {
+        if (PastBlocksMax > 0 && i > PastBlocksMax) { break; }
+        PastBlocksMass++;
 
-		if (i == 1)	{ PastDifficultyAverage.SetCompact(BlockReading->nBits); }
-		else		{ PastDifficultyAverage = ((arith_uint256().SetCompact(BlockReading->nBits) - PastDifficultyAveragePrev) / i) + PastDifficultyAveragePrev; }
-		PastDifficultyAveragePrev = PastDifficultyAverage;
+        if (i == 1) { PastDifficultyAverage.SetCompact(BlockReading->nBits); }
+        else { PastDifficultyAverage = ((CBigNum().SetCompact(BlockReading->nBits) - PastDifficultyAveragePrev) / i) + PastDifficultyAveragePrev; }
+        PastDifficultyAveragePrev = PastDifficultyAverage;
 
-		PastRateActualSeconds			= BlockLastSolved->GetBlockTime() - BlockReading->GetBlockTime();
-		PastRateTargetSeconds			= TargetBlocksSpacingSeconds * PastBlocksMass;
-		PastRateAdjustmentRatio			= double(1);
-		if (PastRateActualSeconds < 0) { PastRateActualSeconds = 0; }
-		if (PastRateActualSeconds != 0 && PastRateTargetSeconds != 0) {
-		PastRateAdjustmentRatio			= double(PastRateTargetSeconds) / double(PastRateActualSeconds);
-		}
-		EventHorizonDeviation			= 1 + (0.7084 * pow((double(PastBlocksMass)/double(144)), -1.228));
-		EventHorizonDeviationFast		= EventHorizonDeviation;
-		EventHorizonDeviationSlow		= 1 / EventHorizonDeviation;
+        PastRateActualSeconds = BlockLastSolved->GetBlockTime() - BlockReading->GetBlockTime();
+        PastRateTargetSeconds = TargetBlocksSpacingSeconds * PastBlocksMass;
+        PastRateAdjustmentRatio = double(1);
+        if (PastRateActualSeconds < 0) { PastRateActualSeconds = 0; }
+        if (PastRateActualSeconds != 0 && PastRateTargetSeconds != 0) {
+        PastRateAdjustmentRatio = double(PastRateTargetSeconds) / double(PastRateActualSeconds);
+        }
+        EventHorizonDeviation = 1 + (0.7084 * pow((double(PastBlocksMass)/double(144)), -1.228));
+        EventHorizonDeviationFast = EventHorizonDeviation;
+        EventHorizonDeviationSlow = 1 / EventHorizonDeviation;
 
-		if (PastBlocksMass >= PastBlocksMin) {
-			if ((PastRateAdjustmentRatio <= EventHorizonDeviationSlow) || (PastRateAdjustmentRatio >= EventHorizonDeviationFast)) { assert(BlockReading); break; }
-		}
-		if (BlockReading->pprev == NULL) { assert(BlockReading); break; }
-		BlockReading = BlockReading->pprev;
-	}
+        if (PastBlocksMass >= PastBlocksMin) {
+            if ((PastRateAdjustmentRatio <= EventHorizonDeviationSlow) || (PastRateAdjustmentRatio >= EventHorizonDeviationFast)) { assert(BlockReading); break; }
+        }
+        if (BlockReading->pprev == NULL) { assert(BlockReading); break; }
+        BlockReading = BlockReading->pprev;
+    }
 
-	arith_uint256 bnNew(PastDifficultyAverage);
-	if (PastRateActualSeconds != 0 && PastRateTargetSeconds != 0) {
-		bnNew *= PastRateActualSeconds;
-		bnNew /= PastRateTargetSeconds;
-	}
-    if (bnNew > powLimitArith) { bnNew = powLimitArith; }
-    LogPrintf("Difficulty Retarget - Kimoto Gravity Well\n");
-    LogPrintf("PastRateAdjustmentRatio = %g\n", PastRateAdjustmentRatio);
-    LogPrintf("Before: %08x  %s\n", BlockLastSolved->nBits, ArithToUint256(arith_uint256().SetCompact(BlockLastSolved->nBits)).ToString().c_str());
-    LogPrintf("After:  %08x  %s\n", bnNew.GetCompact(), ArithToUint256(bnNew).ToString().c_str());
+    CBigNum bnNew(PastDifficultyAverage);
+    if (PastRateActualSeconds != 0 && PastRateTargetSeconds != 0) {
+        bnNew *= PastRateActualSeconds;
+        bnNew /= PastRateTargetSeconds;
+    }
+    if (bnNew > bnProofOfWorkLimit) {
+	bnNew = bnProofOfWorkLimit;
+    }
 
+    /// debug print
+    printf("GetNextWorkRequired V2 RETARGET\n");
+    printf("Before: %08x %s\n", pindexLast->nBits, CBigNum().SetCompact(pindexLast->nBits).getuint256().ToString().c_str());
+    printf("After: %08x %s\n", bnNew.GetCompact(), bnNew.getuint256().ToString().c_str());
     return bnNew.GetCompact();
 }
 
