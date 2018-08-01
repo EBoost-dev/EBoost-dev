@@ -103,8 +103,8 @@ namespace boost {
 
 using namespace std;
 
-const char * const BITCOIN_CONF_FILENAME = "eboost.conf";
-const char * const BITCOIN_PID_FILENAME = "eboost.pid";
+const char * const BITCOIN_CONF_FILENAME = "eboost-core.conf";
+const char * const BITCOIN_PID_FILENAME = "eboost-core.pid";
 
 CCriticalSection cs_args;
 map<string, string> mapArgs;
@@ -462,7 +462,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "eboost";
+    const char* pszModule = "eboost-core";
 #endif
     if (pex)
         return strprintf(
@@ -488,7 +488,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Unix: ~/.bitcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Eboost";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "eBoost-core";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -498,7 +498,7 @@ boost::filesystem::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/Eboost";
+    return pathRet / "Library/Application Support/eBoost-core";
 #else
     // Unix
     return pathRet / ".eboost-core";
@@ -862,5 +862,18 @@ std::string CopyrightHolders(const std::string& strPrefix)
         strCopyrightHolders += "\n" + strYear + "The Bitcoin Core developers";
     }
 
+    // Check for untranslated substitution to make sure Bitcoin Core copyright is not removed by accident
+    if (strprintf(COPYRIGHT_HOLDERS, COPYRIGHT_HOLDERS_SUBSTITUTION).find("eBoost Core") == std::string::npos) {
+        std::string strYear = strPrefix;
+        strYear.replace(strYear.find("2017"), sizeof("2017")-1, "2009");
+        strCopyrightHolders += "\n" + strYear + "The eBoost Core developers";
+    }
+
+    // Check for untranslated substitution to make sure Bitcoin Core copyright is not removed by accident
+    if (strprintf(COPYRIGHT_HOLDERS, COPYRIGHT_HOLDERS_SUBSTITUTION).find("Eboost Core") == std::string::npos) {
+        std::string strYear = strPrefix;
+        strYear.replace(strYear.find("2017"), sizeof("2017")-1, "2009");
+        strCopyrightHolders += "\n" + strYear + "The Eboost Core developers";
+    }
     return strCopyrightHolders;
 }
