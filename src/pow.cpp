@@ -28,10 +28,8 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
 
     const int nHeight = pindexLast == NULL ? 0 : pindexLast->nHeight + 1;
     if (nHeight < 67000) {
-	LogPrintf("Using Bitcoin Difficulty Adjustment \n");
         return GetNextWorkRequired_Bitcoin(pindexLast, pblock, params);
     }
-    LogPrintf("Using Kimoto Difficulty Adjustment \n");
     return KimotoGravityWell(pindexLast, pblock, BlocksTargetSpacing, PastBlocksMin, PastBlocksMax);
 }
 
