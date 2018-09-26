@@ -3638,6 +3638,15 @@ bool static LoadBlockIndexDB(const CChainParams& chainparams)
          LogPrintf("LoadBlockIndexDB(): acp %s\n", hashSyncCheckpoint.ToString().c_str());
 
 
+    // ppcoin: load hashSyncCheckpoint
+    const CChainParams& chainParams = Params();
+    const Consensus::Params& consensusParams = Params().GetConsensus();
+    if (!pblocktree->ReadSyncCheckpoint(hashSyncCheckpoint))
+    {
+        LogPrintf("LoadBlockIndexDB(): synchronized checkpoint not read\n");
+        hashSyncCheckpoint = consensusParams.hashGenesisBlock;
+    }
+    LogPrintf("LoadBlockIndexDB(): synchronized checkpoint %s\n", hashSyncCheckpoint.ToString());
 
     // Check presence of blk files
     LogPrintf("Checking all blk files are present...\n");

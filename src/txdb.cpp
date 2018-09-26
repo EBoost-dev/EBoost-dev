@@ -156,6 +156,17 @@ bool CBlockTreeDB::ReadTxIndex(const uint256 &txid, CDiskTxPos &pos) {
     return Read(std::make_pair(DB_TXINDEX, txid), pos);
 }
 
+
+bool CBlockTreeDB::ReadSyncCheckpoint(uint256& hashCheckpoint)
+{
+    return Read(std::string("hashSyncCheckpoint"), hashCheckpoint);
+}
+
+bool CBlockTreeDB::WriteSyncCheckpoint(uint256 hashCheckpoint)
+{
+    return Write(std::string("hashSyncCheckpoint"), hashCheckpoint);
+}
+
 bool CBlockTreeDB::WriteTxIndex(const std::vector<std::pair<uint256, CDiskTxPos> >&vect) {
     CDBBatch batch(*this);
     for (std::vector<std::pair<uint256,CDiskTxPos> >::const_iterator it=vect.begin(); it!=vect.end(); it++)

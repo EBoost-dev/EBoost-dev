@@ -139,6 +139,10 @@ public:
     bool ReadACPPubKey(std::string& strPubKey);
     bool WriteACPPubKey(const std::string& strPubKey);
 
+
+    bool ReadSyncCheckpoint(uint256& hashCheckpoint);
+    bool WriteSyncCheckpoint(uint256 hashCheckpoint);
+
     bool LoadBlockIndexGuts(boost::function<CBlockIndex*(const uint256&)> insertBlockIndex);
 };
 
