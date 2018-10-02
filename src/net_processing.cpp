@@ -2602,7 +2602,7 @@ bool static ProcessMessage(CNode* pfrom, const std::string& strCommand, CDataStr
         // message would be undesirable as we transmit it ourselves.
     }
     
-    else if (strCommand == NetMsgType::ACP) {
+    else if (strCommand == NetMsgType::ACP || strCommand == NetMsgType::CHECKPOINT) {
         LogPrintf("Received checkpoint, beginning processing.\n");
         CSyncCheckpoint checkpoint;
         vRecv >> checkpoint;
