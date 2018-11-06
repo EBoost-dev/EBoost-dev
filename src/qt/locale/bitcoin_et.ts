@@ -169,7 +169,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR eBoost&lt;/b&gt;!</source>
-        <translation>Hoiatus:Kui sa krüpteerid oma rahakoti ja kaotad salafraasi, siis sa&lt;b&gt;KAOTAD OMA $CRYPTOS_name_uppercaseID&lt;/b&gt;!</translation>
+        <translation>Hoiatus:Kui sa krüpteerid oma rahakoti ja kaotad salafraasi, siis sa&lt;b&gt;KAOTAD OMA EBOOSTID&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -291,7 +291,7 @@
     </message>
     <message>
         <source>Send coins to a eBoost address</source>
-        <translation>Saada münte $CRYPTOS_name_sentencei aadressile</translation>
+        <translation>Saada münte eBoost i aadressile</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -343,11 +343,11 @@
     </message>
     <message>
         <source>Sign messages with your eBoost addresses to prove you own them</source>
-        <translation>Omandi tõestamiseks allkirjasta sõnumid oma $CRYPTOS_name_sentencei aadressiga</translation>
+        <translation>Omandi tõestamiseks allkirjasta sõnumid oma eBoost i aadressiga</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified eBoost addresses</source>
-        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud $CRYPTOS_name_sentencei aadressiga</translation>
+        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud eBoost i aadressiga</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -367,11 +367,11 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and eboost: URIs)</source>
-        <translation>Loo maksepäring (genereerib QR koodid ja $CRYPTOS_name_lowercasei: URId)</translation>
+        <translation>Loo maksepäring (genereerib QR koodid ja eboosti: URId)</translation>
     </message>
     <message>
         <source>Open a eboost: URI or payment request</source>
-        <translation>Ava $CRYPTOS_name_lowercasei: URI või maksepäring</translation>
+        <translation>Ava eboosti: URI või maksepäring</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -379,7 +379,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to eBoost network</source>
-        <translation><numerusform>%n aktiivne ühendus $CRYPTOS_name_sentencei võrku</numerusform><numerusform>%n aktiivset ühendust $CRYPTOS_name_sentencei võrku</numerusform></translation>
+        <translation><numerusform>%n aktiivne ühendus eBoost i võrku</numerusform><numerusform>%n aktiivset ühendust eBoost i võrku</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -757,7 +757,7 @@
     </message>
     <message>
         <source>Automatically open the eBoost client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>$CRYPTOS_name_sentencei kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
+        <translation>eBoost i kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1450,7 +1450,7 @@
     </message>
     <message>
         <source>Sign the message to prove you own this eBoost address</source>
-        <translation>Allkirjasta sõnum $CRYPTOS_name_sentencei aadressi sulle kuulumise tõestamiseks</translation>
+        <translation>Allkirjasta sõnum eBoost i aadressi sulle kuulumise tõestamiseks</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1474,7 +1474,7 @@
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified eBoost address</source>
-        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud $CRYPTOS_name_sentencei aadressiga.</translation>
+        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud eBoost i aadressiga.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1759,7 +1759,7 @@
     </message>
     <message>
         <source>eBoost Core</source>
-        <translation>$CRYPTOS_name_sentencei tuumik</translation>
+        <translation>eBoost i tuumik</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

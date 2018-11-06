@@ -1625,7 +1625,7 @@
     </message>
     <message>
         <source>A message that was attached to the eboost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the eBoost network.</source>
-        <translation>En melding som var tilknyttet $CRYPTOS_name_lowercaseen: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over eBoost-nettverket.</translation>
+        <translation>En melding som var tilknyttet eboosten: URI vil bli lagret med transaksjonen for din oversikt. Denne meldingen vil ikke bli sendt over eBoost-nettverket.</translation>
     </message>
     <message>
         <source>Pay To:</source>

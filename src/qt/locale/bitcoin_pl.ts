@@ -169,7 +169,7 @@
     </message>
     <message>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR eBoost&lt;/b&gt;!</source>
-        <translation>Uwaga: jeśli zaszyfrujesz swój portfel i zgubisz hasło &lt;b&gt;STRACISZ WSZYSTKIE SWOJE $CRYPTOS_name_uppercaseY&lt;/b&gt;!</translation>
+        <translation>Uwaga: jeśli zaszyfrujesz swój portfel i zgubisz hasło &lt;b&gt;STRACISZ WSZYSTKIE SWOJE EBOOSTY&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -323,7 +323,7 @@
     </message>
     <message>
         <source>Send coins to a eBoost address</source>
-        <translation>Wyślij monety na adres $CRYPTOS_name_lowercaseowy</translation>
+        <translation>Wyślij monety na adres eboostowy</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -379,7 +379,7 @@
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified eBoost addresses</source>
-        <translation>Zweryfikuj wiadomość,  aby upewnić się, że została podpisana podanym adresem $CRYPTOS_name_lowercaseowym.</translation>
+        <translation>Zweryfikuj wiadomość,  aby upewnić się, że została podpisana podanym adresem eboostowym.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -399,7 +399,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and eboost: URIs)</source>
-        <translation>Żądaj płatności (generuje kod QR oraz $CRYPTOS_name_lowercaseowe URI)</translation>
+        <translation>Żądaj płatności (generuje kod QR oraz eboostowe URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -1293,7 +1293,7 @@
     </message>
     <message>
         <source>Enter a eBoost address (e.g. %1)</source>
-        <translation>Wprowadź adres $CRYPTOS_name_lowercaseowy (np. %1)</translation>
+        <translation>Wprowadź adres eboostowy (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1902,7 +1902,7 @@
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for eboost transactions than the network can process.</source>
-        <translation>Zapłacenie tylko minimalnej opłaty jest nadal wystarczające, dopóki jest mniejszy wolumen transakcji niż miejsca w blokach. Należy jednak mieć świadomość, że może skończyć się to niezatwierdzeniem nigdy transakcji, gdy jest większe zapotrzebowanie na transakcje $CRYPTOS_name_lowercasea niż sieć może przetworzyć.</translation>
+        <translation>Zapłacenie tylko minimalnej opłaty jest nadal wystarczające, dopóki jest mniejszy wolumen transakcji niż miejsca w blokach. Należy jednak mieć świadomość, że może skończyć się to niezatwierdzeniem nigdy transakcji, gdy jest większe zapotrzebowanie na transakcje eboosta niż sieć może przetworzyć.</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2488,7 +2488,7 @@ Zwróć uwagę, że poprawnie zweryfikowana wiadomość potwierdza to, że nadaw
     </message>
     <message>
         <source>eBoost Core</source>
-        <translation>Rdzeń $CRYPTOS_name_sentencea</translation>
+        <translation>Rdzeń eBoost a</translation>
     </message>
     <message>
         <source>The %s developers</source>

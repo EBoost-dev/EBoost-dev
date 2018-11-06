@@ -1533,7 +1533,7 @@
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation>Nincs elég $CRYPTOS_name_lowercaseod.</translation>
+        <translation>Nincs elég eboostod.</translation>
     </message>
     <message>
         <source>Loading block index...</source>

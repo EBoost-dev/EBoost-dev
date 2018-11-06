@@ -1566,7 +1566,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the eBoost network.</source>
-        <translation>Ett frivilligt meddelande att bifoga betalningsbegäran, vilket visas när begäran öppnas. NB: Meddelandet kommer inte att sändas med betalningen över $CRYPTOS_name_sentencenätverket.</translation>
+        <translation>Ett frivilligt meddelande att bifoga betalningsbegäran, vilket visas när begäran öppnas. NB: Meddelandet kommer inte att sändas med betalningen över eBoost nätverket.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1878,7 +1878,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>The eBoost address to send the payment to</source>
-        <translation>$CRYPTOS_name_sentenceadress att sända betalning till</translation>
+        <translation>eBoost adress att sända betalning till</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1922,7 +1922,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>A message that was attached to the eboost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the eBoost network.</source>
-        <translation>Ett meddelande som bifogades eboost-URI, vilket lagras med transaktionen som referens. NB: Meddelandet kommer inte att sändas över $CRYPTOS_name_sentencenätverket.</translation>
+        <translation>Ett meddelande som bifogades eboost-URI, vilket lagras med transaktionen som referens. NB: Meddelandet kommer inte att sändas över eBoost nätverket.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1967,7 +1967,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>The eBoost address to sign the message with</source>
-        <translation>$CRYPTOS_name_sentenceadress att signera meddelandet med</translation>
+        <translation>eBoost adress att signera meddelandet med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2023,7 +2023,7 @@ Var vänlig och försök igen.</translation>
     </message>
     <message>
         <source>The eBoost address the message was signed with</source>
-        <translation>$CRYPTOS_name_sentenceadressen som meddelandet signerades med</translation>
+        <translation>eBoost adressen som meddelandet signerades med</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified eBoost address</source>

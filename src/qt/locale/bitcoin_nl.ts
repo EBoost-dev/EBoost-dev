@@ -63,7 +63,7 @@
     </message>
     <message>
         <source>These are your eBoost addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw $CRYPTOS_name_sentenceadressen om betalingen mee te verzenden. Controleer altijd het bedrag en het ontvangstadres voordat u uw eboosts verzendt.</translation>
+        <translation>Dit zijn uw eBoost adressen om betalingen mee te verzenden. Controleer altijd het bedrag en het ontvangstadres voordat u uw eboosts verzendt.</translation>
     </message>
     <message>
         <source>These are your eBoost addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
@@ -339,7 +339,7 @@
     </message>
     <message>
         <source>Send coins to a eBoost address</source>
-        <translation>Verstuur munten naar een $CRYPTOS_name_sentenceadres</translation>
+        <translation>Verstuur munten naar een eBoost adres</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -391,11 +391,11 @@
     </message>
     <message>
         <source>Sign messages with your eBoost addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw $CRYPTOS_name_sentenceadressen om te bewijzen dat u deze adressen bezit</translation>
+        <translation>Onderteken berichten met uw eBoost adressen om te bewijzen dat u deze adressen bezit</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified eBoost addresses</source>
-        <translation>Verifiëer handtekeningen om zeker te zijn dat de berichten zijn ondertekend met de gespecificeerde $CRYPTOS_name_sentenceadressen</translation>
+        <translation>Verifiëer handtekeningen om zeker te zijn dat de berichten zijn ondertekend met de gespecificeerde eBoost adressen</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -435,7 +435,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to eBoost network</source>
-        <translation><numerusform>%n actieve verbinding met $CRYPTOS_name_sentencenetwerk</numerusform><numerusform>%n actieve verbindingen met $CRYPTOS_name_sentencenetwerk</numerusform></translation>
+        <translation><numerusform>%n actieve verbinding met eBoost netwerk</numerusform><numerusform>%n actieve verbindingen met eBoost netwerk</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -743,7 +743,7 @@
     </message>
     <message>
         <source>The entered address "%1" is not a valid eBoost address.</source>
-        <translation>Het opgegeven adres "%1" is een ongeldig $CRYPTOS_name_sentenceadres.</translation>
+        <translation>Het opgegeven adres "%1" is een ongeldig eBoost adres.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1049,7 +1049,7 @@
     </message>
     <message>
         <source>Automatically open the eBoost client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Open de $CRYPTOS_name_sentencepoort automatisch op de router. Dit werkt alleen als de router UPnP ondersteunt en het aanstaat.</translation>
+        <translation>Open de eBoost poort automatisch op de router. Dit werkt alleen als de router UPnP ondersteunt en het aanstaat.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -1057,7 +1057,7 @@
     </message>
     <message>
         <source>Connect to the eBoost network through a SOCKS5 proxy.</source>
-        <translation>Verbind met het $CRYPTOS_name_sentencenetwerk via een SOCKS5 proxy.</translation>
+        <translation>Verbind met het eBoost netwerk via een SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1097,7 +1097,7 @@
     </message>
     <message>
         <source>Connect to the eBoost network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Maak verbinding met $CRYPTOS_name_sentencenetwerk door een aparte SOCKS5-proxy voor verborgen diensten van Tor.</translation>
+        <translation>Maak verbinding met eBoost netwerk door een aparte SOCKS5-proxy voor verborgen diensten van Tor.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1196,7 +1196,7 @@
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the eBoost network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn. Uw portemonnee synchroniseert automatisch met het $CRYPTOS_name_sentencenetwerk nadat een verbinding is gelegd, maar dit proces is nog niet voltooid.</translation>
+        <translation>De weergegeven informatie kan verouderd zijn. Uw portemonnee synchroniseert automatisch met het eBoost netwerk nadat een verbinding is gelegd, maar dit proces is nog niet voltooid.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1381,7 +1381,7 @@
     </message>
     <message>
         <source>Enter a eBoost address (e.g. %1)</source>
-        <translation>Voer een $CRYPTOS_name_sentenceadres in (bijv. %1)</translation>
+        <translation>Voer een eBoost adres in (bijv. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1805,7 +1805,7 @@
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the eBoost network.</source>
-        <translation>Een optioneel bericht om bij te voegen aan het betalingsverzoek, welke zal getoond worden wanneer het verzoek is geopend. Opmerking: Het bericht zal niet worden verzonden met de betaling over het $CRYPTOS_name_sentencenetwerk.</translation>
+        <translation>Een optioneel bericht om bij te voegen aan het betalingsverzoek, welke zal getoond worden wanneer het verzoek is geopend. Opmerking: Het bericht zal niet worden verzonden met de betaling over het eBoost netwerk.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -2038,7 +2038,7 @@
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for eboost transactions than the network can process.</source>
-        <translation>De minimale toeslag betalen is prima mits het transactievolume kleiner is dan de ruimte in de blokken. Let wel op dat dit tot gevolg kan hebben dat een transactie nooit wordt bevestigd als er meer vraag is naar $CRYPTOS_name_lowercasetransacties dan het netwerk kan verwerken.</translation>
+        <translation>De minimale toeslag betalen is prima mits het transactievolume kleiner is dan de ruimte in de blokken. Let wel op dat dit tot gevolg kan hebben dat een transactie nooit wordt bevestigd als er meer vraag is naar eboosttransacties dan het netwerk kan verwerken.</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2202,7 +2202,7 @@
     </message>
     <message>
         <source>Warning: Invalid eBoost address</source>
-        <translation>Waarschuwing: Ongeldig $CRYPTOS_name_sentenceadres</translation>
+        <translation>Waarschuwing: Ongeldig eBoost adres</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2245,7 +2245,7 @@
     </message>
     <message>
         <source>The eBoost address to send the payment to</source>
-        <translation>Het $CRYPTOS_name_sentenceadres om betaling aan te versturen</translation>
+        <translation>Het eBoost adres om betaling aan te versturen</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2289,7 +2289,7 @@
     </message>
     <message>
         <source>A message that was attached to the eboost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the eBoost network.</source>
-        <translation>Een bericht dat werd toegevoegd aan de eboost: URI welke wordt opgeslagen met de transactie ter referentie. Opmerking: Dit bericht zal niet worden verzonden over het $CRYPTOS_name_sentencenetwerk.</translation>
+        <translation>Een bericht dat werd toegevoegd aan de eboost: URI welke wordt opgeslagen met de transactie ter referentie. Opmerking: Dit bericht zal niet worden verzonden over het eBoost netwerk.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2338,7 +2338,7 @@
     </message>
     <message>
         <source>The eBoost address to sign the message with</source>
-        <translation>Het $CRYPTOS_name_sentenceadres om bericht mee te ondertekenen</translation>
+        <translation>Het eBoost adres om bericht mee te ondertekenen</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2370,7 +2370,7 @@
     </message>
     <message>
         <source>Sign the message to prove you own this eBoost address</source>
-        <translation>Onderteken een bericht om te bewijzen dat u een bepaald $CRYPTOS_name_sentenceadres bezit</translation>
+        <translation>Onderteken een bericht om te bewijzen dat u een bepaald eBoost adres bezit</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2394,11 +2394,11 @@
     </message>
     <message>
         <source>The eBoost address the message was signed with</source>
-        <translation>Het $CRYPTOS_name_sentenceadres waarmee het bericht ondertekend is</translation>
+        <translation>Het eBoost adres waarmee het bericht ondertekend is</translation>
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified eBoost address</source>
-        <translation>Controleer een bericht om te verifiëren dat het gespecificeerde $CRYPTOS_name_sentenceadres het bericht heeft ondertekend.</translation>
+        <translation>Controleer een bericht om te verifiëren dat het gespecificeerde eBoost adres het bericht heeft ondertekend.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
