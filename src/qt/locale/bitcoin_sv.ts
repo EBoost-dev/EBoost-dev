@@ -63,7 +63,7 @@
     </message>
     <message>
         <source>These are your eBoost addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Detta är dina eBoost adresser för att skicka betalningar. Kolla alltid summan och den mottagande adressen innan du skickar eBoosts.</translation>
+        <translation>Detta är dina eBoost adresser för att skicka betalningar. Kolla alltid summan och den mottagande adressen innan du skickar eBoost.</translation>
     </message>
     <message>
         <source>These are your eBoost addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
@@ -169,7 +169,7 @@ Var vänlig och försök igen.</translation>
         <translation>Bekräfta kryptering av plånbok</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR eBoosts&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR eBoost&lt;/b&gt;!</source>
         <translation>VARNING: Om du krypterar din plånbok och glömmer ditt lösenord, kommer du att &lt;b&gt;FÖRLORA ALLA DINA EBOOST&lt;/b&gt;!</translation>
     </message>
     <message>
