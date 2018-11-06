@@ -130,7 +130,7 @@
         <translation>Промени &amp;лозинку...</translation>
     </message>
     <message>
-        <source>Send coins to a Eboost address</source>
+        <source>Send coins to a eBoost address</source>
         <translation>Пошаљите новац на eboost адресу</translation>
     </message>
     <message>

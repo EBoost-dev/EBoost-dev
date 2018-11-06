@@ -110,16 +110,16 @@
         <translation>Recibiendo direcciones</translation>
     </message>
     <message>
-        <source>Send coins to a Eboost address</source>
-        <translation>Enviar monedas a una dirección Eboost</translation>
+        <source>Send coins to a eBoost address</source>
+        <translation>Enviar monedas a una dirección eBoost</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
         <translation>Cambie la clave utilizada para el cifrado del monedero</translation>
     </message>
     <message>
-        <source>Eboost</source>
-        <translation>Eboost</translation>
+        <source>eBoost</source>
+        <translation>eBoost</translation>
     </message>
     <message>
         <source>Wallet</source>

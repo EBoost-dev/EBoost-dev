@@ -126,8 +126,8 @@
         <translation>Abrir &amp;URL...</translation>
     </message>
     <message>
-        <source>Send coins to a Eboost address</source>
-        <translation>Enviando monedas a una dirección de Eboost</translation>
+        <source>Send coins to a eBoost address</source>
+        <translation>Enviando monedas a una dirección de eBoost</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
@@ -146,8 +146,8 @@
         <translation>&amp;Verificar Mensaje...</translation>
     </message>
     <message>
-        <source>Eboost</source>
-        <translation>Eboost</translation>
+        <source>eBoost</source>
+        <translation>eBoost</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -296,8 +296,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Eboost Core</source>
-        <translation>Eboost Core</translation>
+        <source>eBoost Core</source>
+        <translation>eBoost Core</translation>
     </message>
     <message>
         <source>Insufficient funds</source>

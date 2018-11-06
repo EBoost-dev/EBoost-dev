@@ -142,8 +142,8 @@
         <translation>Reindexando bloques en disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Eboost address</source>
-        <translation>Enviar monedas a una dirección Eboost</translation>
+        <source>Send coins to a eBoost address</source>
+        <translation>Enviar monedas a una dirección eBoost</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +166,8 @@
         <translation>&amp;Verificar mensaje...</translation>
     </message>
     <message>
-        <source>Eboost</source>
-        <translation>Eboost</translation>
+        <source>eBoost</source>
+        <translation>eBoost</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +194,12 @@
         <translation>Cifrar las claves privadas de su monedero</translation>
     </message>
     <message>
-        <source>Sign messages with your Eboost addresses to prove you own them</source>
-        <translation>Firmar mensajes con sus direcciones Eboost para demostrar la propiedad</translation>
+        <source>Sign messages with your eBoost addresses to prove you own them</source>
+        <translation>Firmar mensajes con sus direcciones eBoost para demostrar la propiedad</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Eboost addresses</source>
-        <translation>Verificar mensajes comprobando que están firmados con direcciones Eboost concretas</translation>
+        <source>Verify messages to ensure they were signed with specified eBoost addresses</source>
+        <translation>Verificar mensajes comprobando que están firmados con direcciones eBoost concretas</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -219,7 +219,7 @@
     </message>
     <message>
         <source>Request payments (generates QR codes and eboost: URIs)</source>
-        <translation>Solicitar pagos (genera codigo QR y URL's de Eboost)</translation>
+        <translation>Solicitar pagos (genera codigo QR y URL's de eBoost)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -494,8 +494,8 @@
         <translation>Experto</translation>
     </message>
     <message>
-        <source>Automatically open the Eboost client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automáticamente el puerto del cliente Eboost en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
+        <source>Automatically open the eBoost client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automáticamente el puerto del cliente eBoost en el router. Esta opción solo funciona si el router admite UPnP y está activado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -589,8 +589,8 @@
         <translation>Desde</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Eboost network after a connection is established, but this process has not completed yet.</source>
-        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red Eboost después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the eBoost network after a connection is established, but this process has not completed yet.</source>
+        <translation>La información mostrada puede estar desactualizada. Su monedero se sincroniza automáticamente con la red eBoost después de que se haya establecido una conexión, pero este proceso aún no se ha completado.</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -1019,8 +1019,8 @@
         <translation>Copiar la firma actual al portapapeles del sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Eboost address</source>
-        <translation>Firmar el mensaje para demostrar que se posee esta dirección Eboost</translation>
+        <source>Sign the message to prove you own this eBoost address</source>
+        <translation>Firmar el mensaje para demostrar que se posee esta dirección eBoost</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1039,8 +1039,8 @@
         <translation>&amp;Verificar mensaje</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Eboost address</source>
-        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección Eboost indicada</translation>
+        <source>Verify the message to ensure it was signed with the specified eBoost address</source>
+        <translation>Verificar el mensaje para comprobar que fue firmado con la dirección eBoost indicada</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1123,8 +1123,8 @@
 </translation>
     </message>
     <message>
-        <source>Eboost Core</source>
-        <translation>Núcleo de Eboost</translation>
+        <source>eBoost Core</source>
+        <translation>Núcleo de eBoost</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

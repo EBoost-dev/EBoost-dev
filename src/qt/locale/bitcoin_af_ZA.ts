@@ -214,8 +214,8 @@
         <translation>&amp;Opsies</translation>
     </message>
     <message>
-        <source>Eboost</source>
-        <translation>Eboost</translation>
+        <source>eBoost</source>
+        <translation>eBoost</translation>
     </message>
     <message>
         <source>Wallet</source>

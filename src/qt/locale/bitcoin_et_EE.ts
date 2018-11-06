@@ -130,8 +130,8 @@
         <translation>Kõvakettal olevate plokkide reindekseerimine...</translation>
     </message>
     <message>
-        <source>Eboost</source>
-        <translation>Eboost</translation>
+        <source>eBoost</source>
+        <translation>eBoost</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -760,8 +760,8 @@
         <translation>Valikud:</translation>
     </message>
     <message>
-        <source>Eboost Core</source>
-        <translation>Eboost Core</translation>
+        <source>eBoost Core</source>
+        <translation>eBoost Core</translation>
     </message>
     <message>
         <source>Information</source>

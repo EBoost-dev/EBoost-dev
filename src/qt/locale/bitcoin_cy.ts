@@ -114,8 +114,8 @@
         <translation>Newid y cyfrinymadrodd a ddefnyddiwyd ar gyfer amgryptio'r waled</translation>
     </message>
     <message>
-        <source>Eboost</source>
-        <translation>Eboost</translation>
+        <source>eBoost</source>
+        <translation>eBoost</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -484,8 +484,8 @@
         <translation>Opsiynau:</translation>
     </message>
     <message>
-        <source>Eboost Core</source>
-        <translation>Craidd Eboost</translation>
+        <source>eBoost Core</source>
+        <translation>Craidd eBoost</translation>
     </message>
     <message>
         <source>Information</source>

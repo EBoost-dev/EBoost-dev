@@ -218,8 +218,8 @@
         <translation>Réindexer les blocs sur le disque...</translation>
     </message>
     <message>
-        <source>Send coins to a Eboost address</source>
-        <translation>Envoyer des pièces à une adresse Eboost</translation>
+        <source>Send coins to a eBoost address</source>
+        <translation>Envoyer des pièces à une adresse eBoost</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -242,8 +242,8 @@
         <translation>&amp;Vérification du message</translation>
     </message>
     <message>
-        <source>Eboost</source>
-        <translation>Eboost</translation>
+        <source>eBoost</source>
+        <translation>eBoost</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -270,8 +270,8 @@
         <translation>Crypter les clé privées qui appartiennent votre portefeuille</translation>
     </message>
     <message>
-        <source>Sign messages with your Eboost addresses to prove you own them</source>
-        <translation>Signer vos messages avec vos adresses Eboost pour prouver que vous les détenez</translation>
+        <source>Sign messages with your eBoost addresses to prove you own them</source>
+        <translation>Signer vos messages avec vos adresses eBoost pour prouver que vous les détenez</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -306,8 +306,8 @@
         <translation>&amp;Options de ligne de commande</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Eboost network</source>
-        <translation><numerusform>%n connexion active au réseau Eboost</numerusform><numerusform>%n connexions actives au réseau Eboost</numerusform></translation>
+        <source>%n active connection(s) to eBoost network</source>
+        <translation><numerusform>%n connexion active au réseau eBoost</numerusform><numerusform>%n connexions actives au réseau eBoost</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -684,8 +684,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically open the Eboost client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir le port du client Eboost automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
+        <source>Automatically open the eBoost client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir le port du client eBoost automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -844,8 +844,8 @@
         <translation>Montant</translation>
     </message>
     <message>
-        <source>Enter a Eboost address (e.g. %1)</source>
-        <translation>Entrer une adresse Eboost (e.g. %1)</translation>
+        <source>Enter a eBoost address (e.g. %1)</source>
+        <translation>Entrer une adresse eBoost (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1662,8 +1662,8 @@
         <translation>Impossible de démarrer le serveur HTTP. Voir le journal de débogage pour plus de détails.</translation>
     </message>
     <message>
-        <source>Eboost Core</source>
-        <translation>Eboost Core</translation>
+        <source>eBoost Core</source>
+        <translation>eBoost Core</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

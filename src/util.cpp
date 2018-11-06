@@ -870,10 +870,10 @@ std::string CopyrightHolders(const std::string& strPrefix)
     }
 
     // Check for untranslated substitution to make sure Bitcoin Core copyright is not removed by accident
-    if (strprintf(COPYRIGHT_HOLDERS, COPYRIGHT_HOLDERS_SUBSTITUTION).find("Eboost Core") == std::string::npos) {
+    if (strprintf(COPYRIGHT_HOLDERS, COPYRIGHT_HOLDERS_SUBSTITUTION).find("eBoost Core") == std::string::npos) {
         std::string strYear = strPrefix;
         strYear.replace(strYear.find("2017"), sizeof("2017")-1, "2009");
-        strCopyrightHolders += "\n" + strYear + "The Eboost Core developers";
+        strCopyrightHolders += "\n" + strYear + "The eBoost Core developers";
     }
     return strCopyrightHolders;
 }
