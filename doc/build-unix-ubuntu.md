@@ -23,20 +23,22 @@ Source code location:  https://github.com/EBoost-dev/EBoost-dev
     > ./autogen.sh
 8.	Build	
     > ./configure
-9.	Make PTX directory	
+9.	Make eBoost directory	
     > mkdir -p ~/.eboost-core
 
 10.	Create Config	
     > cd .. && touch .eboost-core/eboost.conf
 11.	Edit Config	
     > vi .eboost-core/eboost.conf
-	#Add the following lines to the PTX.conf file:
+	#Add the following lines to the eboost.conf file:
 rpcuser=yourrpcusername
 rpcpassword=yoursecurerpcpassword
-rpcbind=127.0.0.1
-rpcport=5883
+rpcallowip=127.0.0.1
+rpcport=5885
 txindex=1
 daemon=1
+server=1
+enableaccounts=1
 addnode=node1.minercity.org
 addnode=node2.minercity.org
 addnode=node3.minercity.org
@@ -46,6 +48,6 @@ addnode=node3.minercity.org
     > sh startup-EBST.sh
 14.	Verify sync	
     > tail -f /home/nodeuser/.eboost-core/debug.txt
-15.	Cronjob	Add startup-PTX.sh to crontab
+15.	Cronjob	Add startup-EBST.sh to crontab
     > crontab -e
 eg.  @reboot sh /home/nodeuser/startup-EBST.sh
