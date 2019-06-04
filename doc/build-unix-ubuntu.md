@@ -31,6 +31,7 @@ Source code location:  https://github.com/EBoost-dev/EBoost-dev
 11.	Edit Config	
     > vi .eboost-core/eboost.conf
 	#Add the following lines to the eboost.conf file:
+```
 rpcuser=yourrpcusername
 rpcpassword=yoursecurerpcpassword
 rpcallowip=127.0.0.1
@@ -42,6 +43,7 @@ enableaccounts=1
 addnode=node1.minercity.org
 addnode=node2.minercity.org
 addnode=node3.minercity.org
+```
 12.	Create shell script startup-EBST.sh with command	
      "nohup /home/nodeuser/eboost/src/eboostd"
 13.	Run shell script	
