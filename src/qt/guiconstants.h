@@ -48,9 +48,9 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 36
 
-#define QAPP_ORG_NAME "Eboost"
+#define QAPP_ORG_NAME "eBoost"
 #define QAPP_ORG_DOMAIN "eboost.org"
-#define QAPP_APP_NAME_DEFAULT "Eboost-Qt"
-#define QAPP_APP_NAME_TESTNET "Eboost-Qt-testnet"
+#define QAPP_APP_NAME_DEFAULT "eBoost-Qt"
+#define QAPP_APP_NAME_TESTNET "eBoost-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

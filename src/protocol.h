@@ -241,6 +241,7 @@ extern const char *GETBLOCKTXN;
  */
 extern const char *BLOCKTXN;
 extern const char *ACP;
+extern const char *CHECKPOINT;
 };
 
 /* Get a vector of all valid message types (see above) */

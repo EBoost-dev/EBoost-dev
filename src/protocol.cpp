@@ -40,6 +40,7 @@ const char *CMPCTBLOCK="cmpctblock";
 const char *GETBLOCKTXN="getblocktxn";
 const char *BLOCKTXN="blocktxn";
 const char *ACP="acp";
+const char *CHECKPOINT="checkpoint";
 };
 
 /** All known message types. Keep this in the same order as the list of

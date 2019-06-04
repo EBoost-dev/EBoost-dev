@@ -114,8 +114,8 @@
         <translation>Reindexando bloques en el disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Eboost address</source>
-        <translation>Enviar monedas a una dirección Eboost</translation>
+        <source>Send coins to a eBoost address</source>
+        <translation>Enviar monedas a una dirección eBoost</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -130,8 +130,8 @@
         <translation>Abre la consola de depuración y diágnostico</translation>
     </message>
     <message>
-        <source>Eboost</source>
-        <translation>Eboost</translation>
+        <source>eBoost</source>
+        <translation>eBoost</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -158,12 +158,12 @@
         <translation>Encriptar las llaves privadas que pertenecen a tu billetera</translation>
     </message>
     <message>
-        <source>Sign messages with your Eboost addresses to prove you own them</source>
-        <translation>Firma mensajes con tus direcciones Eboost para probar que eres dueño de ellas</translation>
+        <source>Sign messages with your eBoost addresses to prove you own them</source>
+        <translation>Firma mensajes con tus direcciones eBoost para probar que eres dueño de ellas</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Eboost addresses</source>
-        <translation>Verificar mensajes para asegurar que estaban firmados con direcciones Eboost especificas</translation>
+        <source>Verify messages to ensure they were signed with specified eBoost addresses</source>
+        <translation>Verificar mensajes para asegurar que estaban firmados con direcciones eBoost especificas</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -608,8 +608,8 @@
         <translation>Correr en segundo plano como daemon y aceptar comandos</translation>
     </message>
     <message>
-        <source>Eboost Core</source>
-        <translation>Eboost Core</translation>
+        <source>eBoost Core</source>
+        <translation>eBoost Core</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

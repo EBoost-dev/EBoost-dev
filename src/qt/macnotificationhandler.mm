@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.eboost.Eboost-Qt";
+        return @"org.eboost.eBoost-Qt";
     } else {
         return [self __bundleIdentifier];
     }

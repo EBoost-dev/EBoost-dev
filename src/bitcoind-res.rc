@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Eboost"
-            VALUE "FileDescription",    "eboostd (Eboost node with a JSON-RPC server)"
+            VALUE "CompanyName",        "eBoost"
+            VALUE "FileDescription",    "eboostd (eBoost node with a JSON-RPC server)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "eboostd"
             VALUE "LegalCopyright",     COPYRIGHT_STR

@@ -1,6 +1,6 @@
 // Copyright (c) 2012-2013 PPCoin developers
 // Copyright (c) 2013 Primecoin developers
-// Copyright (c) 2017-2018 Eboost Developers
+// Copyright (c) 2017-2018 eBoost Developers
 // Distributed under conditional MIT/X11 software license,
 // see the accompanying file COPYING
 //
@@ -8,7 +8,7 @@
 // ppcoin network in 2012, giving cryptocurrency developers a tool to gain
 // additional network protection against 51% attack.
 // 
-// Enforced ACP added to Eboost 0.14.3 by Matt Smith, 2018.
+// Enforced ACP added to eBoost 0.14.3 by Matt Smith, 2018.
 //
 // Concepts
 //

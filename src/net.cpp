@@ -1466,7 +1466,7 @@ void ThreadMapPort()
             }
         }
 
-        std::string strDesc = "Eboost " + FormatFullVersion();
+        std::string strDesc = "eBoost " + FormatFullVersion();
 
         try {
             while (true) {

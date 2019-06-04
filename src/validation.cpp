@@ -49,7 +49,7 @@
 #include <boost/thread.hpp>
 
 #if defined(NDEBUG)
-# error "Eboost cannot be compiled without assertions."
+# error "eBoost cannot be compiled without assertions."
 #endif
 
 /**
@@ -90,7 +90,7 @@ static void CheckBlockIndex(const Consensus::Params& consensusParams);
 /** Constant stuff for coinbase transactions we create: */
 CScript COINBASE_FLAGS;
 
-const std::string strMessageMagic = "Eboost Signed Message:\n";
+const std::string strMessageMagic = "eBoost Signed Message:\n";
 
 // Internal stuff
 namespace {
@@ -3638,6 +3638,15 @@ bool static LoadBlockIndexDB(const CChainParams& chainparams)
          LogPrintf("LoadBlockIndexDB(): acp %s\n", hashSyncCheckpoint.ToString().c_str());
 
 
+    // ppcoin: load hashSyncCheckpoint
+    const CChainParams& chainParams = Params();
+    const Consensus::Params& consensusParams = Params().GetConsensus();
+    if (!pblocktree->ReadSyncCheckpoint(hashSyncCheckpoint))
+    {
+        LogPrintf("LoadBlockIndexDB(): synchronized checkpoint not read\n");
+        hashSyncCheckpoint = consensusParams.hashGenesisBlock;
+    }
+    LogPrintf("LoadBlockIndexDB(): synchronized checkpoint %s\n", hashSyncCheckpoint.ToString());
 
     // Check presence of blk files
     LogPrintf("Checking all blk files are present...\n");
@@ -3708,7 +3717,7 @@ bool CVerifyDB::VerifyDB(const CChainParams& chainparams, CCoinsView *coinsview,
 
     // Verify blocks in the best chain
     if (nCheckDepth <= 0)
-        // Eboost: suffices until year 10214. Didn't x4 value due to integer wrap around and upstream compatibility.
+        // eBoost: suffices until year 10214. Didn't x4 value due to integer wrap around and upstream compatibility.
         nCheckDepth = std::numeric_limits<int>::max();
     if (nCheckDepth > chainActive.Height())
         nCheckDepth = chainActive.Height();

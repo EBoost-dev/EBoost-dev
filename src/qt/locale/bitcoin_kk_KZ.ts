@@ -70,7 +70,7 @@
         <translation>Құпия сөзді өзгерту</translation>
     </message>
     <message>
-        <source>Eboost</source>
+        <source>eBoost</source>
         <translation>Биткоин</translation>
     </message>
     <message>

@@ -137,7 +137,17 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            (  0, uint256S("0x21938e71a19f0053f1ea9d2c616feba7c767ade95a20946f26747ae96aaa572b"))
+            (       0, uint256S("0x21938e71a19f0053f1ea9d2c616feba7c767ade95a20946f26747ae96aaa572b"))
+	    (  950521, uint256S("0x3fd8beaae900cdc6d4fe7252ed0572516f2f8e079cedb0ffe3ef577e656d6ee6"))
+	    (  950526, uint256S("0x5c8b911f8bbbea5972d2aeaf55594b1397652475d55cd09ec3d0dba482f3000b"))
+	    (  950534, uint256S("0xf403303c0ff512ca5693b1f4eee363443bc8ba6be25c0fb54e5a137350ad57a4"))
+	    (  950552, uint256S("0x8986e7893a4a572324bd5f1d836be037bf65ce962570fb9bd0d42f08740ca673"))
+	    (  950712, uint256S("0x7c5d436197fe453989f3d797bc7e247c905e9fa032aee8188daf617774024b0d"))
+	    (  950739, uint256S("0x21f8a430dc8fc537f6a586f669e059ef164cedb46fb06209b26f750bc026d0c8"))
+	    (  950849, uint256S("0xe4eb68d4627bf7cb4f242618133377fdc8f5cef0ce1692c3c0b51f3b0db10ceb"))
+	    (  959135, uint256S("0xf9767b30c72249a20b7abcda654f6d435ca5f94955a240d1e3e566cedeaa39fa"))
+	    (  959136, uint256S("0x207e225d9825e8abd76e3a494c7cfaf532cd2b138ae11a5d32c3c3162a3f8996"))
+	    (  959137, uint256S("0x1bd73d05be14274de41b0e9a690b36394192a2b56a0f6b0a05ba4f99079ea040"))
         };
 
         chainTxData = ChainTxData{

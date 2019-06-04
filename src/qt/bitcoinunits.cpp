@@ -51,9 +51,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("Eboost");
-    case mBTC: return QString("Milli-Eboost (1 / 1" THIN_SP_UTF8 "000)");
-    case uBTC: return QString("Micro-Eboost (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+    case BTC: return QString("eBoost");
+    case mBTC: return QString("Milli-eBoost (1 / 1" THIN_SP_UTF8 "000)");
+    case uBTC: return QString("Micro-eBoost (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
     default: return QString("???");
     }
 }

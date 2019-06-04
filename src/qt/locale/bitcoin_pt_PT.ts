@@ -160,8 +160,8 @@
         <translation>Confirmar encriptação da carteira</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR Eboosts&lt;/b&gt;!</source>
-        <translation>Aviso: se encriptar a sua carteira e perder a sua frase de segurnça, &lt;b&gt;PERDERÁ TODOS OS SEUS Eboosts&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR eBoost&lt;/b&gt;!</source>
+        <translation>Aviso: se encriptar a sua carteira e perder a sua frase de segurnça, &lt;b&gt;PERDERÁ TODOS OS SEUS eBoost&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -310,8 +310,8 @@
         <translation>A reindexar os blocos no disco...</translation>
     </message>
     <message>
-        <source>Send coins to a Eboost address</source>
-        <translation>Enviar moedas para um endereço Eboost</translation>
+        <source>Send coins to a eBoost address</source>
+        <translation>Enviar moedas para um endereço eBoost</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -334,8 +334,8 @@
         <translation>&amp;Verificar mensagem...</translation>
     </message>
     <message>
-        <source>Eboost</source>
-        <translation>Eboost</translation>
+        <source>eBoost</source>
+        <translation>eBoost</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -362,12 +362,12 @@
         <translation>Encriptar as chaves privadas que pertencem à sua carteira</translation>
     </message>
     <message>
-        <source>Sign messages with your Eboost addresses to prove you own them</source>
-        <translation>Assine as mensagens com os seus endereços Eboost para provar que é o proprietário dos mesmos</translation>
+        <source>Sign messages with your eBoost addresses to prove you own them</source>
+        <translation>Assine as mensagens com os seus endereços eBoost para provar que é o proprietário dos mesmos</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Eboost addresses</source>
-        <translation>Verifique mensagens para assegurar que foram assinadas com o endereço Eboost especificado</translation>
+        <source>Verify messages to ensure they were signed with specified eBoost addresses</source>
+        <translation>Verifique mensagens para assegurar que foram assinadas com o endereço eBoost especificado</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -406,8 +406,8 @@
         <translation>&amp;Opções da linha de &amp;comando</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Eboost network</source>
-        <translation><numerusform>%n ligação ativa à rede Eboost</numerusform><numerusform>%n ligações ativas à rede Eboost</numerusform></translation>
+        <source>%n active connection(s) to eBoost network</source>
+        <translation><numerusform>%n ligação ativa à rede eBoost</numerusform><numerusform>%n ligações ativas à rede eBoost</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -953,7 +953,7 @@
         <translation>&amp;Gastar troco não confirmado</translation>
     </message>
     <message>
-        <source>Automatically open the Eboost client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the eBoost client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Abrir a porta do cliente eboost automaticamente no seu router. Isto apenas funciona se o seu router suportar UPnP e este se encontrar ligado.</translation>
     </message>
     <message>
@@ -961,8 +961,8 @@
         <translation>Mapear porta, utilizando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Eboost network through a SOCKS5 proxy.</source>
-        <translation>Conectar à rede da Eboost através dum proxy SOCLS5.</translation>
+        <source>Connect to the eBoost network through a SOCKS5 proxy.</source>
+        <translation>Conectar à rede da eBoost através dum proxy SOCLS5.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1001,8 +1001,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Eboost network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Ligar à rede Eboost através de um proxy SOCKS5 separado para utilizar os serviços ocultos do Tor.</translation>
+        <source>Connect to the eBoost network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Ligar à rede eBoost através de um proxy SOCKS5 separado para utilizar os serviços ocultos do Tor.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1096,8 +1096,8 @@
         <translation>Formulário</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Eboost network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada poderá estar desatualizada. A sua carteira sincroniza automaticamente com a rede Eboost depois de estabelecer ligação, mas este processo ainda não está completo.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the eBoost network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada poderá estar desatualizada. A sua carteira sincroniza automaticamente com a rede eBoost depois de estabelecer ligação, mas este processo ainda não está completo.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1213,8 +1213,8 @@
         <translation>Quantia</translation>
     </message>
     <message>
-        <source>Enter a Eboost address (e.g. %1)</source>
-        <translation>Entre um endereço Eboost (ex. %1)</translation>
+        <source>Enter a eBoost address (e.g. %1)</source>
+        <translation>Entre um endereço eBoost (ex. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1549,8 +1549,8 @@
         <translation>Reutilizar um endereço de receção existente (não recomendado)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Eboost network.</source>
-        <translation>Uma mensagem opcional para anexar ao pedido de pagamento, que será exibida quando o pedido for aberto. Nota: A mensagem não será enviada com o pagamento através da rede Eboost.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the eBoost network.</source>
+        <translation>Uma mensagem opcional para anexar ao pedido de pagamento, que será exibida quando o pedido for aberto. Nota: A mensagem não será enviada com o pagamento através da rede eBoost.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1869,8 +1869,8 @@
         <translation>Este é um pagamento normal.</translation>
     </message>
     <message>
-        <source>The Eboost address to send the payment to</source>
-        <translation>O endereço Eboost para enviar o pagamento</translation>
+        <source>The eBoost address to send the payment to</source>
+        <translation>O endereço eBoost para enviar o pagamento</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1913,8 +1913,8 @@
         <translation>Introduza um rótulo para este endereço para o adicionar à sua lista de endereços usados</translation>
     </message>
     <message>
-        <source>A message that was attached to the eboost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Eboost network.</source>
-        <translation>Uma mensagem que estava anexada ao URI eboost: que será armazenada com a transação para sua referência. Nota: Esta mensagem não será enviada através da rede Eboost.</translation>
+        <source>A message that was attached to the eboost: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the eBoost network.</source>
+        <translation>Uma mensagem que estava anexada ao URI eboost: que será armazenada com a transação para sua referência. Nota: Esta mensagem não será enviada através da rede eBoost.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -1954,8 +1954,8 @@
         <translation>Pode assinar mensagens com os seus endereços para provar que são seus. Tenha atenção ao assinar mensagens ambíguas, pois ataques de phishing podem tentar enganá-lo de modo a assinar a sua identidade para os atacantes. Apenas assine declarações detalhadas com as quais concorde.</translation>
     </message>
     <message>
-        <source>The Eboost address to sign the message with</source>
-        <translation>O endereço Eboost para designar a mensagem</translation>
+        <source>The eBoost address to sign the message with</source>
+        <translation>O endereço eBoost para designar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1986,8 +1986,8 @@
         <translation>Copiar a assinatura actual para a área de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Eboost address</source>
-        <translation>Assine uma mensagem para provar que é dono deste endereço Eboost</translation>
+        <source>Sign the message to prove you own this eBoost address</source>
+        <translation>Assine uma mensagem para provar que é dono deste endereço eBoost</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2010,12 +2010,12 @@
         <translation>Introduza o endereço de assinatura, mensagem (assegure-se que copia quebras de linha, espaços, tabulações, etc. exactamente) e assinatura abaixo para verificar a mensagem. Tenha atenção para não ler mais na assinatura do que o que estiver na mensagem assinada, para evitar ser enganado por um atacante que se encontre entre si e quem assinou a mensagem.</translation>
     </message>
     <message>
-        <source>The Eboost address the message was signed with</source>
-        <translation>O endereço Eboost com que a mensagem foi designada</translation>
+        <source>The eBoost address the message was signed with</source>
+        <translation>O endereço eBoost com que a mensagem foi designada</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Eboost address</source>
-        <translation>Verifique a mensagem para assegurar que foi assinada com o endereço Eboost especificado</translation>
+        <source>Verify the message to ensure it was signed with the specified eBoost address</source>
+        <translation>Verifique a mensagem para assegurar que foi assinada com o endereço eBoost especificado</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2183,8 +2183,8 @@
         <translation>Não é possível iniciar o servidor HTTP. Verifique o debug.log para detalhes.</translation>
     </message>
     <message>
-        <source>Eboost Core</source>
-        <translation>Eboost Core</translation>
+        <source>eBoost Core</source>
+        <translation>eBoost Core</translation>
     </message>
     <message>
         <source>A fee rate (in %s/kB) that will be used when fee estimation has insufficient data (default: %s)</source>
